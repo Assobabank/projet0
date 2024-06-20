@@ -1,0 +1,25 @@
+   
+  .card-img-top {
+
+   object-fit: cover; /* S'assure que l'image remplit l'espace sans déformer */
+ }
+  
+  .title
+  {
+   font-size: 14px;
+   text-wrap: nowrap;
+   text-align: left;
+   
+
+  }
+  .card-text{
+   text-align:right;
+   text-wrap: nowrap;
+
+  }
+
+
+  
+
+  
+  

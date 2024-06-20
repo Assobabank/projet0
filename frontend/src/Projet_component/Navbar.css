@@ -1,0 +1,12 @@
+.menu-right{
+    margin-right:34px;
+    position: relative;
+}
+.color{
+    color:red;
+    
+}
+#sign{
+   position: absolute;
+   bottom:24px;
+}
