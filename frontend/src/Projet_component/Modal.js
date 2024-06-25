@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import { useDispatch } from 'react-redux';
 import { addItem } from '../cartSlice';
 
-const Modal = ({ item }) => {
+  const Modal = ({ item }) => {
   const [count, setCount] = useState(1);
   const dispatch = useDispatch();
   const modalRef = useRef(null);
