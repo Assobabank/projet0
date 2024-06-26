@@ -33,23 +33,23 @@ const App = () => {
   };
 
   useEffect(() => {
-    axios.get(`${process.env.REACT_APP_API_URL}/api/fruits`)
+    axios.get('http://localhost:4000/api/fruits')
       .then(response => {
         setFruits(response.data);
       })
       .catch(error => {
         console.error('Error fetching fruits:', error);
       });
-  
-    axios.get(`${process.env.REACT_APP_API_URL}/api/legumes`)
+
+    axios.get('http://localhost:4000/api/legumes')
       .then(response => {
         setLegumes(response.data);
       })
       .catch(error => {
         console.error('Error fetching legumes:', error);
       });
-  
-    axios.get(`${process.env.REACT_APP_API_URL}/api/boissons`)
+
+    axios.get('http://localhost:4000/api/boissons')
       .then(response => {
         setBoissons(response.data);
       })
@@ -57,7 +57,6 @@ const App = () => {
         console.error('Error fetching boissons:', error);
       });
   }, []);
-  
 
   return (
     <Router>
